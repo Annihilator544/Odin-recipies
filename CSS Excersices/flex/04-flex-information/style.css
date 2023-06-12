@@ -6,10 +6,23 @@ img {
   width: 100px;
   height: 100px;
 }
-
+.flexy{
+  display: flex;
+  gap: 52px;
+  justify-content: space-evenly;
+}
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  margin:32px;
+}
+.flex2{
+  display: flex;
+  word-wrap: normal;
+  flex-wrap: wrap;
+  width:200px;
+  justify-content: space-evenly;
 }
 
 /* do not edit this footer */
