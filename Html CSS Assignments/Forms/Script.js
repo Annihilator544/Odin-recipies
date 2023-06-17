@@ -7,4 +7,3 @@ const interval = setInterval(function() {
     // method to be executed;
     over();
   }, 1000);
- 

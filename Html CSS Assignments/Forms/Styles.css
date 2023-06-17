@@ -52,17 +52,34 @@ p{
     display: flex;
     flex-direction: column;
 }
-.Inputs{
+.inputs{
     display: flex;
+    gap :16px;
+    padding: 20px;
+    flex-direction: column;
     
 }
 .testing{
-    display:flex;
-    flex-direction: column;
+    
 }
 .empty{
     display: flex;
     flex-direction: row;
-    padding: 64px;
-    justify-content: space-between;
+    padding: 32px;
+    gap:16px;
+    justify-content: left;
 }
+input{
+    width:100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+input:focus {
+    box-shadow: 2px 2px #7B7A72;
+    border: 2px solid rgb(90, 135, 218);
+      outline: none; 
+  }
+  input:invalid {
+    border-color:solid  red;
+  }
