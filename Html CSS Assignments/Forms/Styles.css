@@ -1,85 +1,168 @@
-body{
-    margin:0;
-    display: flex;
-    font-family: myfont;
+:root {
+  --left-space: 48px;
 }
-.imgs{
-    width: auto;
-    height:100vh;
-    margin:0;
-    position: relative;
-    
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-h1{
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    opacity: 0.6;
-    color: white;
-    top: 10rem;
-    font-size: 100px;
-    text-align: center;
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("./Norse-Bold.otf");
 }
-.container{
-    display: flex;
+
+.content {
+  min-height: 100vh;
+  display: flex;
 }
-@font-face{
-    font-family: myfont;
-    src:url("./Norse-Bold.otf");
+
+/* Image Section */
+
+.image-section {
+  background-position: center center;
+  background-image: url("./leaf-image.jpg");
+  background-size: cover;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
 }
-p{
-    font-size: 32px;
-    font-family: myfont;
-    text-align: left;
+
+a {
+  color: white;
 }
-.Intro{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5.5rem;
+  font-family: "Norse Bold";
+  margin-top: 20vh;
+  padding: 16px 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
-.Form{
-    display: flex;
-    flex-direction: column;
-    padding :64px;
+
+.banner img {
+  height: 125px;
 }
-.Intro,.Forma,.Extro{
-    
-    
+
+.banner h2{
+  margin: 0;
 }
-.Forma{
-    display: flex;
-    flex-direction: column;
+
+.attribution {
+  font-size: 0.9rem;
 }
-.inputs{
-    display: flex;
-    gap :16px;
-    padding: 20px;
-    flex-direction: column;
-    
+
+/* Text Section */
+
+.text-section {
+  flex: 5;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.testing{
-    
+
+.text-section > p {
+  font-size: 1.4rem;
+  margin-left: var(--left-space);
+  font-weight: bold;
+  max-width: 80%;
+  margin-bottom: 8px;
 }
-.empty{
-    display: flex;
-    flex-direction: row;
-    padding: 32px;
-    gap:16px;
-    justify-content: left;
+
+.text-section p:first-child {
+  margin-top: 0;
 }
-input{
-    width:100%;
-    padding: 12px 20px;
-    border-radius: 8px;
-    border: 1px solid black;
+
+.inputs-section {
+  color: black;
+  background-color: white;
+  margin-top: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: var(--left-space);
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
-input:focus {
-    box-shadow: 2px 2px #7B7A72;
-    border: 2px solid rgb(90, 135, 218);
-      outline: none; 
-  }
-  input:invalid {
-    border-color:solid  red;
-  }
+
+.inputs-section label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1px;
+}
+
+.inputs-section input {
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 100%;
+  font-size: 1rem;
+  margin-right: 32px;
+}
+
+.inputs-section h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.inputs > div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 84px;
+  row-gap: 18px;
+  margin-bottom: 18px;
+}
+
+.inputs label {
+  display: block;
+}
+
+input.focus {
+  border: 1px solid blue;
+  box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  margin-top: 0;
+  font-size: 0.8rem;
+  color: red;
+}
+
+#create-account {
+  margin-left: var(--left-space);
+  margin-top: 32px;
+  border: none;
+  background-color: #596D48;
+  padding: 12px 48px;
+  border-radius: 8px;
+  box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+p.log-in {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 32px;
+}
+
+.log-in a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
