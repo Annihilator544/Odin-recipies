@@ -8,6 +8,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 64px;
+height: 100vh;
 }
 .table{
     display: grid ;
@@ -39,6 +40,12 @@ button{
     align-items: center;
     justify-items: center;
 }
+.footer{
+    font-family: "aditya3";
+    font-size: 16px;
+    color: white;
+    margin-top: auto;
+}
 @font-face{
     font-family: "aditya";
     src: url("Moon\ Flower.ttf")
@@ -46,4 +53,8 @@ button{
 @font-face{
     font-family: "aditya2";
     src: url("04B_30__.TTF")
+}
+@font-face{
+    font-family: "aditya3";
+    src: url("LEMONMILK-Regular.otf")
 }

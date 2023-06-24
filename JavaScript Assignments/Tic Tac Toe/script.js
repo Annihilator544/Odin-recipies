@@ -112,3 +112,13 @@ function minimax(currBdSt, currMark) {
     }
     return allTestPlayInfos[bestTestPlay];
 } 
+
+    var i = 0;
+    var txt = 'Created By Aditya Sharma | Logo Design By Ritik Balwant';
+    var j=txt.length-1;
+    var speed = 250;
+function typeWriter() {
+    document.getElementById("footer").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+}

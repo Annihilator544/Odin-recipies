@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/png" href="logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <script src="script.js">
-        function cellClick(this){
-            this.style.backgroundColor="red";
-        }
-    </script>
+<body onclick="typeWriter()">
+    <script src="script.js"></script>
     Tic Tac Toe
     <div class="table">
         <div class="row">
@@ -32,5 +29,8 @@
     </div>
     <p class="p" style="font-size: 32px;">Try to Win !!!!</p>
     <button onclick="window.location.reload()"> Wanna Try Again ?</button>
+    <div class="footer">
+        <p id="footer"></p>
+    </div>
 </body>
 </html>
