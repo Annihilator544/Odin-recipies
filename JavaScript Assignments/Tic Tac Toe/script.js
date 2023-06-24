@@ -32,7 +32,7 @@ function cellClick(e){
     else if(getAllEmptyCellsIndexes(array).length==0){
         document.getElementsByClassName("p")[0].innerHTML="Draw";
     }
-   
+   event.target.onclick=null;
 }
 function getAllEmptyCellsIndexes(array){
     return array.filter((cell)=>cell!=aiMark&&cell!=humanMark);
