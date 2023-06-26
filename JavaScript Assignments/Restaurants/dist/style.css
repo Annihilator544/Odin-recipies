@@ -1,0 +1,102 @@
+body{
+    background-image: url("ivan-torres-MQUqbmszGGM-unsplash.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+#content{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+header p{
+    margin:40px;
+}
+header{
+    font-family: "Ad";
+    font-size: 64px;
+    text-align: center;
+    align-items: center;
+    padding: 8px 0;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.8);
+    color: white;
+    grid-area: 1/1/2/4;
+}
+button{
+    font-size: 32px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    font-family: "Ad2";
+    margin: 8px;
+    cursor: pointer;
+    &:active{
+        border-bottom: 4px solid white;
+    }
+}
+img{
+    width: 100%;
+}
+view{
+    background:rgba(0, 0, 0, 0.6);
+    color: white;
+    padding:40px;
+    font-family: "Ad2";
+    margin-top: 64px;
+    grid-area: 2/2/3/3;
+    align-items: center;
+    text-align: center;
+    gap:16px;
+}
+view p{
+    margin: 32px;
+    font-size: 24px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    font-size: 8px;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    background:rgba(0, 0, 0, 0.5);
+    padding: 16px;
+}
+.menu-item img{
+    width: 50%;
+    margin: 0 auto;
+}
+.menu-item p{
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+}
+.circular_image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    /* commented for demo
+    float: left;
+    margin-left: 125px;
+    margin-top: 20px;
+    */
+    
+    /*for demo*/
+    display:inline-block;
+    vertical-align:middle;
+  }
+@font-face {
+    font-family: "Ad";
+    src: url(BaconyScript_PERSONAL_USE_ONLY.otf);
+}
+@font-face {
+    font-family: "Ad2";
+    src: url(LEMONMILK-Light.otf);
+}
