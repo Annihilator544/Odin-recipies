@@ -31,9 +31,9 @@ button{
     font-family: "Ad2";
     margin: 8px;
     cursor: pointer;
-    &:active{
-        border-bottom: 4px solid white;
-    }
+}
+.active{
+    border-bottom: 4px solid white;
 }
 img{
     width: 100%;
@@ -62,10 +62,27 @@ view p{
     font-size: 8px;
 }
 .menu-item{
-    display: flex;
+    display: grid;
     flex-direction: column;
     background:rgba(0, 0, 0, 0.5);
     padding: 16px;
+    height:200px;
+}
+.footer{
+    font-family: "aditya3";
+    font-size: 16px;
+    color: white;
+    background:rgba(0, 0, 0, 0.8);
+    padding: 16px;
+    text-align: center;
+    margin-top: 64px;
+}
+.footer p{
+    margin:0;
+}
+@font-face{
+    font-family: "aditya3";
+    src: url("LEMONMILK-Regular.otf")
 }
 .menu-item img{
     width: 50%;

@@ -1,5 +1,9 @@
 const home = () => {
 let view = document.getElementsByTagName("view");
+let button = document.getElementsByTagName("button");
+button[0].classList.add("active");
+button[1].classList.remove("active");
+button[2].classList.remove("active");
 view = view[0];
 view.innerHTML = "";
 let p=document.createElement("p");

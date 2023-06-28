@@ -1,7 +1,8 @@
 
     const menu = document.createElement("div");
-    menu.classList.add("menu");
-    menu.appendChild(
+  
+      menu.classList.add("menu");
+      menu.appendChild(
       createMenuItem(
         "Salsiccia",
         "Tomato sauce, Mozarella, Tomato, Homemade sausage, Garlic, Basil"
@@ -74,6 +75,10 @@
   
   const loadMenu=()=> {
     let main = document.getElementsByTagName("view");
+    let button = document.getElementsByTagName("button");
+    button[0].classList.remove("active");
+    button[1].classList.add("active");
+    button[2].classList.remove("active");
     main=main[0];
     main.innerHTML="";
     main.appendChild(menu);

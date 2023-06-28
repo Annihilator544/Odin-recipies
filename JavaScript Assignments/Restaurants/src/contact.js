@@ -1,6 +1,10 @@
 function createContact() {
     const contact = document.createElement('div')
     contact.classList.add('contact')
+    let button = document.getElementsByTagName("button");
+  button[2].classList.add("active");
+  button[1].classList.remove("active");
+  button[0].classList.remove("active"); 
   
     const phoneNumber = document.createElement('p')
     phoneNumber.textContent = '📞 123 456 789'
