@@ -1,0 +1,123 @@
+body{
+    background-color: #1c1c1c;
+    display: grid;
+    grid-template-columns: 300px auto;
+    margin: 0;
+    color: #f6f6f6;
+    font-family: 'LemonMilkBold';
+}
+.sidebar{
+    background-color: #202020;
+    grid-area: 1 / 1 / 1 / 2;
+    
+    display: grid;
+    flex-direction: column;
+    padding: 20px;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'LemonMilk';
+    font-size: 16px;
+}
+.Title{
+    font-size: 24px;
+    color: #e46c8c;
+    display: flex;
+}
+.addTask{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.task{
+    display: flex;
+    gap: 16px;
+    padding: 16px 4px 16px 8px;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+}
+.inputTask{
+    background-color: #3c3c3c;
+    border: none;
+    outline: none;
+    height: 100%;
+    color: #e46c8c;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+}
+.form-container{
+    display: flex;
+    gap:16px;
+    font-size: 16px;
+
+}
+button{
+    background-color: #3c3c3c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #e46c8c;
+    font-family: 'LemonMilk';
+    font-size: 16px;
+    cursor: pointer;
+    width:100%; 
+    margin-top: auto;
+    bottom:48px;
+    display: flex;
+    gap:16px;
+    position: sticky;
+}
+.addlist{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px 10px 0px;; 
+    position: absolute;
+    bottom:16px;
+}
+.item{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px 10px 0px;; 
+}
+.searchBar{
+    margin-top: 20px;
+    display: flex;
+}
+.searchBar input{
+    background-color: #222222;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    color: #f6f6f6;
+    font-family: 'LemonMilk';
+    
+}
+.content{
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 54px;
+    display: flex;
+    flex-direction: column;
+}
+@font-face{
+    font-family: 'LemonMilk';
+    src: url('Fonts/lemon_milk/LEMONMILK-Light.otf');
+}
+@font-face{
+    font-family: 'LemonMilkBold';
+    src: url('./Fonts/lemon_milk/LEMONMILK-Regular.otf');
+}
+#Date{
+    font-family: 'LemonMilk';
+    background-color: #3c3c3c;
+    border: none;
+    outline: none;
+    color: #e46c8c;
+}
