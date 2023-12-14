@@ -1,22 +1,22 @@
 .Item{
     display:grid;
-    grid-template-columns: 60% 40%;
-    grid-column-gap: 10px;
+    grid-template-columns: 40% 60%;
     font-family: "LemonMilk";
 }
-.Images{
+.Image{
     display: grid;
-    grid-template-columns: 50% 50%;
     flex-direction: column;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin: 20px;
+    width: 100%;
 }
-img{
-    
+.Image>img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
+
 }
+
 @font-face {
     font-family: "Lava";
     src: url("./assets/Fonts/Pilowlava-Regular.otf");

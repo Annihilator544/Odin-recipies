@@ -1,16 +1,20 @@
-import { useState } from "react";
-import ShoppingItem from "./ShoppingItem"
+import React, { useEffect, useState } from "react";
+import LandingPage from "./LandingPage";
+import ShoppingItem from "./ShoppingItem";
 
  function App() {
   const [data, setData]= useState("Null");
+  useEffect(()=>{
   fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
             .then(json=>{
                setData(json);
             })
+          },[])
+          console.log(data);
   return (
     <>
-     <ShoppingItem arr={data[0]} />
+    <LandingPage data={data}/>
     </>
   )
 }
